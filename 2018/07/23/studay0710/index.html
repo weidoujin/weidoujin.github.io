@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 关于python数据类型tags: 数据基础 toc: true">
+  <meta name="description" content="title: 0710 位运算符与程序结构化——iftags: python基础 toc: true">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2018/07/23/study0709/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/23/studay0710/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 关于python数据类型tags: 数据基础 toc: true">
+<meta property="og:description" content="title: 0710 位运算符与程序结构化——iftags: python基础 toc: true">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-23T09:08:15.689Z">
+<meta property="og:updated_time" content="2018-07-23T09:22:34.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="title: 关于python数据类型tags: 数据基础 toc: true">
+<meta name="twitter:description" content="title: 0710 位运算符与程序结构化——iftags: python基础 toc: true">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,22 +154,47 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-study0709" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-studay0710" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>title: 关于python数据类型<br>tags: 数据基础</p>
+<p>title: 0710 位运算符与程序结构化——if<br>tags: python基础</p>
 <h2 id="toc-true"><a href="#toc-true" class="headerlink" title="toc: true"></a>toc: true</h2><a id="more"></a>
-<p>第二节课   7.6<br>上午<br>9.50课堂小结：<br>项目流程：  销售获取客户需求 —项目经理整理成说明文档 发送给项目成员。设计成员设计排版审核后发送给前端  图片代码部署成功后发送给后台 链接数据库。运维把完整的代码上传给服务器检测匹配。<br>访问流程：客户端发送请求到服务器，服务器在编写语言中寻找关键词链接数据库，数据库将数据传输给服务器，然后应答给客户端。<br>Vscode设置格式中   左下角设置  右键进入 拷贝左边命令进右边界面  单一命令后不用加，多个命令中间“，”隔开最后一条命令结束不用， 搜索命令fotsi设置字体格式 wordwarp设置换行<br>下午<br>创建文件  以.py结尾</p>
-<p>变量   命名时候用字母数字组合 最好是用字母开头。</p>
-<p>注释   注释有单行注释也有多行注释  单行以#开头  多行注释有两种方式<br>‘’’ 多行注释 ‘’’<br>“”” 多行注释 “””</p>
-<p>数据类型<br>Number<br>整形int    浮点型  float<br>String  字符串  有三种定义方式  单引号  双引号   三引号<br>Str1=’hello’   str1=”hello”   str1=’’’hello’’’<br>三引号有换行操作，单引号不能执行换行操作  但是可以在行尾添加\（续行符）<br>转义字符<br>\    反斜线<br>\’    单引号<br>\”    双引号<br>\000    空<br>\n    换行<br>\r    回车<br>\t    横向制表符<br>(在行尾时)    续行符</p>
-<p>List    列表  [ ]</p>
-<p>可获取数据也可修改数据   +表示连接  ：相当于区间取片   *拷贝的作用<br>list.append(obj) 在列表末尾添加新的对象<br>list.count(obj) 统计某个元素在列表中出现的次数<br>list.extend(seq) 在列表末尾一次性追加另一个序列中的多个值(用新列表扩展原来的列表)<br>list.index(obj) 从列表中找出某个值第一个匹配项的索引位置，索引从0开始<br>list.insert(index, obj) 将对象插入列表<br>list.pop(obj=list[-1]) 移除列表中的一个元素(默认最后一个元素)，并且返回该元素的值<br>list.remove(obj) 移除列表中某个值的第一个匹配项<br>list.reverse() 反向列表中元素，倒转<br>list.sort([func]) 对原列表进行排序<br>Tuple  元组  跟列表类似 元组中的（）可省略 可以获取数据，但是不能修改数据<br>cmp(tuple1, tuple2) 比较两个元组元素。<br>len(tuple) 计算元组元素个数。<br>max(tuple) 返回元组中元素最大值。<br>min(tuple) 返回元组中元素最小值。<br>tuple(seq) 将列表转换为元组。</p>
-<p>Dict   字典{ }<br>可以获取数据也可以添加数据更改数据但是不能使用下标获取字典内容   键名不能为数字只能是字符串。<br>cmp(dict1, dict2) 比较两个字典元素。<br>len(dict) 计算字典元素个数，即键的总数。<br>str(dict) 输出字典可打印的字符串表示。<br>type(variable) 返回输入的变量类型，如果变量是字典就返回字典类型。<br>radiansdict.clear() 删除字典内所有元素<br>radiansdict.copy() 返回一个字典的浅复制<br>radiansdict.fromkeys() 创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值<br>radiansdict.get(key, default=None) 返回指定键的值，如果值不在字典中返回default值<br>radiansdict.has_key(key) 如果键在字典dict里返回true，否则返回false<br>radiansdict.items() 以列表返回可遍历的(键, 值) 元组数组<br>radiansdict.keys() 以列表返回一个字典所有的键<br>radiansdict.setdefault(key, default=None) 和get()类似, 但如果键不已经存在于字典中，将会添加键并将值设为default<br>radiansdict.update(dict2) 把字典dict2的键/值对更新到dict里<br>radiansdict.values() 以列表返回字典中的所有值<br>Set  集合{}可以获取所有数据但是不能通过下标获取  集合无序输出时顺序变换  不重复 自动去除重复的部分  所以经常用于大数据的去除重复处理。<br>布尔值 只有两个值True跟false经常用于判断</p>
-<p>登陆页面的填写账号密码或者注册信息等通过表单传输过来的数据格式和字典是一样的</p>
+<p>7.10上午<br>位运算符<br>&amp;    按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0    (a &amp; b) 输出结果 12 ，二进制解释： 0000 1100<br>111100<br>  1101<br>  1100<br>|    按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1。    (a | b) 输出结果 61 ，二进制解释： 0011 1101<br>111100<br>001101<br>111101<br>^    按位异或运算符：当两对应的二进位相异时，结果为1    (a ^ b) 输出结果 49 ，二进制解释： 0011 0001<br>111100<br>001101<br>110001<br>~    按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1 。~x 类似于 -x-1    (~a ) 输出结果 -61 ，二进制解释： 1100 0011，在一个有符号二进制数的补码形式。<br>结果总为 —（a+1）<br>&lt;&lt;    左移动运算符：运算数的各二进位全部左移若干位，由 &lt;&lt; 右边的数字指定了移动的位数，高位丢弃，低位补0。(每移动一位值扩大二倍）    a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000    结果：每向左进移动一位值扩大二倍</p>
+<blockquote>
+<blockquote>
+<p>   右移动运算符：把”&gt;&gt;”左边的运算数的各二进位全部右移若干位，&gt;&gt; 右边的数字指定了移动的位数（每移动一位值缩小二倍）    a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111     结果：每向左进移动一位值扩大二倍</p>
+</blockquote>
+</blockquote>
+<p>成员运算符<br>in    如果在指定的序列中找到值返回 True，否则返回 False。x 在 y 序列中 , 如果 x 在 y 序列中返回 True。字典中查询的是对应的键，类型保持一致<br>not in    如果在指定的序列中没有找到值返回 True，否则返回 False。    x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</p>
+<p>在列表时候   当输入的数字值一致但数据类型不一样时输出结果为False</p>
+<p>在元组中  如果只输入值在元组的一个部分整体中的一个为false</p>
+<p>在字典中只能判断键  不能判断值</p>
+<p>is    is 是判断两个标识符是不是引用自一个对象    x is y, 类似 id(x) == id(y) , 如果引用的是同一个对象则返回 True，否则返回 False<br>is not    is not 是判断两个标识符是不是引用自不同对象    x is not y ， 类似 id(a) != id(b)。如果引用的不是同一个对象则返回结果 True，否则返回 False。</p>
+<p>**    指数 (最高优先级)<br>~ + -    按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</p>
+<ul>
+<li>/ % //    乘，除，取模和取整除</li>
+</ul>
+<ul>
+<li><ul>
+<li>加法减法<blockquote>
+<blockquote>
+<p>&lt;&lt;    右移，左移运算符<br>&amp;    位 ‘AND’<br>^ |    位运算符<br>&lt;= &lt; &gt; &gt;=    比较运算符<br>&lt;&gt; == !=    等于运算符<br>= %= /= //= -= += *= **=    赋值运算符<br>is is not    身份运算符<br>in not in    成员运算符<br>not or and    逻辑运算符</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>isinstance() 函数来判断一个对象是否是一个已知的类型</p>
+<p>下午<br>程序结构化所需要的三种基本结构:<br>顺序结构、分支结构（选择结构）、循环结构<br>顺序结构：在程序结构中，最基本的就是顺序结构。程序会按照自上而下的顺序执行。<br>if语句<br>if语句嵌套<br>单分枝：只含有一个 if<br>双分枝：含有 if  else<br>多项分枝控制语句<br>if…elif…else语句<br>if/elif语句是if语句的扩展版本，它包含多个条件，用于作出复杂的判断。<br> 格式：<br>if &lt;条件判断1&gt;:<br>        &lt;执行1&gt;<br>elif &lt;条件判断2&gt;:<br>        &lt;执行2&gt;<br>….<br>else:<br>        &lt;执行3&gt;</p>
+<p>在嵌套 if 语句中，可以把 if…elif…else 结构放在另外一个 if…elif…else 结构中<br>格式：<br>if 表达式1:<br>    语句<br>    if 表达式2:<br>        语句<br>    elif 表达式3:<br>        语句<br>    else:<br>        语句<br>else:<br>    语句<br>注意间隔符  上下对齐<br>条件控制案例<br>判断成绩是否及格<br>根据星期返回的值判断今天是星期几<br>import datetime<br>week=(datetime.datetime.now())<br>week1=week.weekday()<br>print(type(week1))<br>print(week)<br>if week1==0:<br>print(‘周一’)<br>elif week1==1:<br>print(‘周二’)<br>elif week1==2:<br>print(‘周三’)<br>elif week1==3:<br>print(‘周四’)<br>elif week1==4:<br>print(‘周五’)<br>elif week1==5:<br>print(‘周六’)<br>elif week1==6:<br>print(‘周日’)<br>else:<br>print(‘输入错误’)</p>
+<p>根据成绩判断优良中差<br>score=int(input(‘输入成绩:’))<br>if 0&lt;=score&lt;60 :<br>print(‘回家吧’)<br>else:<br>if score&gt;100 or score&lt;0:<br>print(‘改错了’)<br>elif score==100:<br>print(‘完美’)<br>elif score&gt;=90:<br>print(‘优秀’)<br>elif score&gt;=75:<br>print(‘还行吧’)<br>elif score&gt;=60:<br>print(‘危险’)</p>
+<p>根据年龄判断小孩，青年，中年，老年<br>age=int(input(‘请输入年龄:’))<br>if age&gt;=100 :<br>print(‘老人高寿啊’)<br>elif age&gt;=80 :<br>print(‘老人家身子骨硬朗的咧’)<br>elif age&gt;=60 :<br>print(‘退休光荣’)<br>elif age&gt;=30 :<br>print(‘正值壮年’)<br>elif age&gt;=18 :<br>print(‘青年’)<br>elif age&gt;0 :<br>print(‘小娃娃’)<br>else :<br>print(‘小生命’)</p>
+<p>剪刀石头布  电脑随机</p>
+<h1 id="石头-1-剪刀-2-布-3"><a href="#石头-1-剪刀-2-布-3" class="headerlink" title="石头 1 剪刀 2 布 3"></a>石头 1 剪刀 2 布 3</h1><p>import random<br>b=random.randint(1,3)<br>a=int(input(‘输入’))<br>if a==1:<br>print(‘超级大石头’)<br>elif a==2:<br>print(‘无敌金角剪’)<br>else :<br>print(‘遮天蔽日布’)<br>print(‘ VS’)<br>if b==1:<br>print(‘超级大石头’)<br>elif b==2:<br>print(‘无敌金角剪’)<br>else :<br>print(‘遮天蔽日布’)<br>if (a==1 and b==2) or (a==2 and b==3) or (a==3 and b==1):<br>print(‘无敌是多麽寂寞’)<br>elif (a==b):<br>print(‘棋逢对手，战平’)<br>else:<br>print(‘ 饮恨’)</p>
 
       
 
@@ -249,7 +274,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/23/study0709/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/23/studay0710/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -263,7 +288,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/23/studay0710/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/23/study0711/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -273,7 +298,7 @@
     </a>
   
   
-    <a href="/2018/07/19/list/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/07/23/study0709/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
