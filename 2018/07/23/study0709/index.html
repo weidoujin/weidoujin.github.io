@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="title: 关于python数据类型tags: 数据基础 toc: true">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/23/study0709/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title: 关于python数据类型tags: 数据基础 toc: true">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-23T09:08:15.689Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title: 关于python数据类型tags: 数据基础 toc: true">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,118 +154,151 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-study0709" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 关于python数据类型<br>tags: 数据基础</p>
+<h2 id="toc-true"><a href="#toc-true" class="headerlink" title="toc: true"></a>toc: true</h2><a id="more"></a>
+<p>第二节课   7.6<br>上午<br>9.50课堂小结：<br>项目流程：  销售获取客户需求 —项目经理整理成说明文档 发送给项目成员。设计成员设计排版审核后发送给前端  图片代码部署成功后发送给后台 链接数据库。运维把完整的代码上传给服务器检测匹配。<br>访问流程：客户端发送请求到服务器，服务器在编写语言中寻找关键词链接数据库，数据库将数据传输给服务器，然后应答给客户端。<br>Vscode设置格式中   左下角设置  右键进入 拷贝左边命令进右边界面  单一命令后不用加，多个命令中间“，”隔开最后一条命令结束不用， 搜索命令fotsi设置字体格式 wordwarp设置换行<br>下午<br>创建文件  以.py结尾</p>
+<p>变量   命名时候用字母数字组合 最好是用字母开头。</p>
+<p>注释   注释有单行注释也有多行注释  单行以#开头  多行注释有两种方式<br>‘’’ 多行注释 ‘’’<br>“”” 多行注释 “””</p>
+<p>数据类型<br>Number<br>整形int    浮点型  float<br>String  字符串  有三种定义方式  单引号  双引号   三引号<br>Str1=’hello’   str1=”hello”   str1=’’’hello’’’<br>三引号有换行操作，单引号不能执行换行操作  但是可以在行尾添加\（续行符）<br>转义字符<br>\    反斜线<br>\’    单引号<br>\”    双引号<br>\000    空<br>\n    换行<br>\r    回车<br>\t    横向制表符<br>(在行尾时)    续行符</p>
+<p>List    列表  [ ]</p>
+<p>可获取数据也可修改数据   +表示连接  ：相当于区间取片   *拷贝的作用<br>list.append(obj) 在列表末尾添加新的对象<br>list.count(obj) 统计某个元素在列表中出现的次数<br>list.extend(seq) 在列表末尾一次性追加另一个序列中的多个值(用新列表扩展原来的列表)<br>list.index(obj) 从列表中找出某个值第一个匹配项的索引位置，索引从0开始<br>list.insert(index, obj) 将对象插入列表<br>list.pop(obj=list[-1]) 移除列表中的一个元素(默认最后一个元素)，并且返回该元素的值<br>list.remove(obj) 移除列表中某个值的第一个匹配项<br>list.reverse() 反向列表中元素，倒转<br>list.sort([func]) 对原列表进行排序<br>Tuple  元组  跟列表类似 元组中的（）可省略 可以获取数据，但是不能修改数据<br>cmp(tuple1, tuple2) 比较两个元组元素。<br>len(tuple) 计算元组元素个数。<br>max(tuple) 返回元组中元素最大值。<br>min(tuple) 返回元组中元素最小值。<br>tuple(seq) 将列表转换为元组。</p>
+<p>Dict   字典{ }<br>可以获取数据也可以添加数据更改数据但是不能使用下标获取字典内容   键名不能为数字只能是字符串。<br>cmp(dict1, dict2) 比较两个字典元素。<br>len(dict) 计算字典元素个数，即键的总数。<br>str(dict) 输出字典可打印的字符串表示。<br>type(variable) 返回输入的变量类型，如果变量是字典就返回字典类型。<br>radiansdict.clear() 删除字典内所有元素<br>radiansdict.copy() 返回一个字典的浅复制<br>radiansdict.fromkeys() 创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值<br>radiansdict.get(key, default=None) 返回指定键的值，如果值不在字典中返回default值<br>radiansdict.has_key(key) 如果键在字典dict里返回true，否则返回false<br>radiansdict.items() 以列表返回可遍历的(键, 值) 元组数组<br>radiansdict.keys() 以列表返回一个字典所有的键<br>radiansdict.setdefault(key, default=None) 和get()类似, 但如果键不已经存在于字典中，将会添加键并将值设为default<br>radiansdict.update(dict2) 把字典dict2的键/值对更新到dict里<br>radiansdict.values() 以列表返回字典中的所有值<br>Set  集合{}可以获取所有数据但是不能通过下标获取  集合无序输出时顺序变换  不重复 自动去除重复的部分  所以经常用于大数据的去除重复处理。<br>布尔值 只有两个值True跟false经常用于判断</p>
+<p>登陆页面的填写账号密码或者注册信息等通过表单传输过来的数据格式和字典是一样的</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/study0709/" class="archive-article-date">
-  	<time datetime="2018-07-23T09:08:15.754Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/23/study0709/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/list/" class="archive-article-date">
-  	<time datetime="2018-07-19T03:58:37.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/17/str/" class="archive-article-date">
-  	<time datetime="2018-07-17T08:19:52.607Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-17</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/17/str/">str</a>
-    </h1>
+  
+    <a href="/2018/07/19/list/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-14T08:23:57.634Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -284,8 +321,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
